@@ -1,1 +1,7 @@
-venv/
+/venv
+*.db
+*.swp
+*.pyc
+/app/__pycache__/
+__pycache__/
+.vscode/
