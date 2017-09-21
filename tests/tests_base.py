@@ -26,7 +26,7 @@ class BaseDrinksTestCase(unittest.TestCase):
         self.db = DB
         self.db.create_all()
 
-        if Users.query.filter_by(name='admin').count() == 0:
+        if Users.query.filter_by(first_name='admin').count() == 0:
             self.user = Users(first_name='admin',
                               second_name='istrator',
                               phonenumber='0712345678',

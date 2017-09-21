@@ -118,7 +118,7 @@ class UserTests(tests.tests_base.BaseDrinksTestCase):
                                    'email@drinks.com',
                                    'default2',
                                    '0724820290')
-            self.assertTrue(b'Email already taken' in response.data)
+            self.assertTrue(b'Phonenumber already in use' in response.data)
 if __name__ == '__main__':
     unittest.main()
     
